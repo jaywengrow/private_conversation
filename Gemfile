@@ -5,7 +5,7 @@ gem 'rails', '3.2.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -24,6 +24,7 @@ gem 'jquery-rails'
 
 group :development, :test do
 	gem 'rspec-rails'
+	# gem 'annotate'
 end
 
 group :test do
@@ -32,7 +33,7 @@ group :test do
 end
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

@@ -1,4 +1,10 @@
 PrivateConversation::Application.routes.draw do
+  get "sessions/new"
+
+  root :to => 'users#new'
+
+  resource :users
+  resource :sessions
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
